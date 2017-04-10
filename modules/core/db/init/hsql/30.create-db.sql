@@ -1,0 +1,16 @@
+
+insert into DEMO_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('195f87ce-bc9c-98ae-c822-3052a0b6dd18', 6, '2016-10-18 10:47:43', 'admin', '2016-10-19 18:05:10', 'admin', null, null, 'Appointment', 'A longer description', '2017-04-10 12:00:00', '2017-04-10 16:00:00', 'event-red');
+
+insert into DEMO_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('407e73a9-9aa9-421d-dbdb-1e1c47a2786b', 3, '2016-10-18 12:34:19', 'admin', '2016-10-19 16:01:06', 'admin', null, null, 'Free time', 'Time for some different stuff', '2017-04-11 06:00:00', '2017-04-11 12:00:00', 'event-blue');
+
+insert into DEMO_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('52de207d-e8f5-ae71-b29f-f1dbcca41099', 2, '2016-10-18 12:35:09', 'admin', '2016-10-19 16:01:14', 'admin', null, null, 'Breakfast', 'Breakfast with John Doe', '2017-04-12 09:00:00', '2017-04-12 13:00:00', 'event-yellow');
+
+insert into DEMO_CALENDAR_EVENT
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, CAPTION, DESCRIPTION, START_DATE, END_DATE, STYLENAME)
+values ('c1648a0d-23f7-2e75-3db7-6e9466735959', 1, '2016-10-19 17:05:32', 'admin', '2016-10-19 17:05:32', null, null, null, 'Interview', 'Job interview', '2017-04-13 10:00:00', '2017-04-13 15:00:00', 'event-green');

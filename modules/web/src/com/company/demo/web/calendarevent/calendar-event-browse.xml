@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.demo.web.calendarevent.CalendarEventBrowse"
+        focusComponent="calendarEventsTable"
+        lookupComponent="calendarEventsTable"
+        messagesPack="com.company.demo.web.calendarevent">
+    <dsContext>
+        <collectionDatasource id="calendarEventsDs"
+                              class="com.company.demo.entity.CalendarEvent"
+                              view="_local">
+            <query>
+                <![CDATA[select e from demo$CalendarEvent e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="calendarEventsTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="calendarEventsTable"
+                datasource="calendarEventsDs">
+            <properties include=".*"/>
+        </filter>
+        <table id="calendarEventsTable"
+               width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="caption"/>
+                <column id="description"/>
+                <column id="startDate"/>
+                <column id="endDate"/>
+                <column id="stylename"/>
+            </columns>
+            <rows datasource="calendarEventsDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="calendarEventsTable.create"/>
+                <button id="editBtn"
+                        action="calendarEventsTable.edit"/>
+                <button id="removeBtn"
+                        action="calendarEventsTable.remove"/>
+            </buttonsPanel>
+        </table>
+    </layout>
+</window>

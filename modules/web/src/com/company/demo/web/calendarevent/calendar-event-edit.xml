@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://editorCaption"
+        class="com.company.demo.web.calendarevent.CalendarEventEdit"
+        datasource="calendarEventDs"
+        focusComponent="fieldGroup"
+        messagesPack="com.company.demo.web.calendarevent">
+    <dsContext>
+        <datasource id="calendarEventDs"
+                    class="com.company.demo.entity.CalendarEvent"
+                    view="_local"/>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="windowActions"
+            spacing="true">
+        <fieldGroup id="fieldGroup"
+                    datasource="calendarEventDs">
+            <column width="400px">
+                <field id="caption"/>
+                <field id="description"/>
+                <field id="startDate"/>
+                <field id="endDate"/>
+                <field id="stylename"/>
+            </column>
+        </fieldGroup>
+        <frame id="windowActions"
+               screen="editWindowActions"/>
+    </layout>
+</window>
