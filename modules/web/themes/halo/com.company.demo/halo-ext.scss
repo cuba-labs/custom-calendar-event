@@ -55,4 +55,15 @@
   .v-calendar-header-week .v-calendar-back, .v-calendar-header-week .v-calendar-next {
     display: none;
   }
+
+  .v-calendar-custom-event-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    top: 32px;
+    bottom: 1px;
+  }
 }
